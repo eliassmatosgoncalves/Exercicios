@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /*shorthand-background
+        color > image > position > repeat > [size] > attachment
+        */ 
+        background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+        background-size: cover;
+    
         }
+       
+    
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
         }
@@ -25,7 +35,7 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas nemo magni iusto sapiente veritatis unde expedita, odit nulla consequuntur perspiciatis laborum. Voluptas officiis sit et, itaque minima aut. Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores saepe eaque sapiente quos cum dolorum est similique doloribus? Tempore obcaecati quo natus cumque molestias! Excepturi in nihil fugiat? Eum, laboriosam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas nemo magni iusto sapiente veritatis unde expedita, odit nulla consequuntur perspiciatis laborum. Voluptas officiis sit et, itaque minima aut. Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores saepe eaque sapiente quos cum dolorum est similique doloribus? Tempore obcaecati quo natus cumque molestias! Excepturi in nihil fugiat? Eum, laboriosam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias tempore nemo doloribus deserunt perspiciatis ab atque? Nihil quibusdam quidem, recusandae perferendis beatae pariatur nemo, fugit eius sequi explicabo facilis!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus ratione quaerat, quasi temporibus ut quidem ipsa molestiae, praesentium assumenda repellendus ipsam quos aliquid voluptatem magni voluptates esse officia reprehenderit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aperiam doloremque dolores est ipsum numquam consectetur magni, harum voluptate praesentium. Fugiat quos cumque totam animi incidunt voluptate aliquid illum eligendi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum porro facilis quam, repudiandae atque non veritatis ad fugit, similique earum, laboriosam sunt incidunt aliquid error necessitatibus minima iure ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis impedit, culpa voluptatum qui harum molestias! Eum ipsam ullam necessitatibus ipsa consectetur sapiente possimus unde, magni rem mollitia cum animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione, maiores aspernatur porro incidunt odio corporis pariatur modi architecto ex molestiae! Aperiam sed iste a quaerat, fuga atque doloribus enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eius alias minus repellat error at voluptate, iste est cumque quod incidunt rerum harum vero voluptatem ex autem nisi perferendis modi</p>
     </main>
     
 </body>
