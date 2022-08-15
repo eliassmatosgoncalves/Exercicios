@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
 
@@ -20,10 +21,30 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: darkgreen;
+           
+        }
         thead,tfoot {
             background-color: rgb(255, 0, 0);
             color: rgb(10, 2, 2);
         }
+        thead > tr> th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgreen;
+        } 
+
+        
+
+    
         td.num {
             text-align: right;
         }
@@ -34,6 +55,7 @@
     <!--
         anatomia para tabelas grandes
         table
+        caption
           thead
                tr, td,th
           tbody
@@ -42,16 +64,20 @@
                tr,td,th         
     -->
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th
+                scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"> <strong>210.147.125</strong></td>
             </tr>
 
@@ -169,6 +195,14 @@
         </tbody>
       
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti saepe at illum, quae incidunt similique sunt id debitis eius sit, corrupti ipsa eum ex vero! Reprehenderit quasi similique eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque ipsa iusto accusamus perferendis aperiam, expedita quia velit repudiandae praesentium. Sed nisi voluptatem unde provident tempora natus voluptas expedita repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum voluptas nihil nemo impedit exercitationem quasi doloremque esse corrupti recusandae vel vero quos fugiat facere, nesciunt ducimus autem ea. Architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt fugit aperiam autem quos repudiandae minus sed? Laborum corrupti quibusdam in, saepe quae laboriosam dicta, velit consequuntur obcaecati tempore numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam aut, minus voluptas nostrum quisquam eum inventore possimus sed voluptates nulla incidunt amet assumenda dolorum cum. Quos, quisquam suscipit. Accusamus.
+    </p>
     
 </body>
 </html>
